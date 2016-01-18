@@ -1,1 +1,42 @@
+package java_assignment;
+import java.util.*;
+/**
+ *
+ * @author Hayredin Tahir
+ */
+public class java_assignment {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+         Scanner c=new Scanner(System.in);
+        System.out.println("Enter An Integer To Calculate Factorial And Fibonacci");
+        int integer=c.nextInt();
+        if(integer > 0){
+        int f=1;
+        for(int i=1;i<=integer;i++){
+            f=f*i;
+        }
+        System.out.println("FACTORIAL OF " + integer +"=\t"+ f);    
+     int a=0;
+        int b=1;
+       
+             System.out.print("FIBONACCI OF NUM IS=");
+        System.out.print(a);
+        for(int i=1;i<=integer;i++){
+           b=a+b;
+           a=a+b;
+           System.out.print(" ,"+(b));
+           System.out.print(" ,"+(a));
+       }
+        }
+        else { 
+      System.out.println("The Value You Entered Is Less Than Zero"); 
+    
+    }
+    }
+    
+}
 
